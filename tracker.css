@@ -1,0 +1,160 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header1
+{
+    background: blue;
+}
+.head-text
+{
+    font-family: 'Times New Roman', Times, serif;
+   font-weight: lighter;
+   margin-left: 20px;
+   color: white;
+}
+.head-down
+{
+    display: flex;
+    border: 1px black solid;
+    justify-content: space-around;
+    width:50%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 25px 0px;
+    margin-top: 30px;
+    
+}
+.form-select
+{
+    height: 60px;
+    width:auto;
+}
+.plus-btn
+{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ font-size: x-large;
+ font-weight: 600;
+ color: white;
+ border-style: none;
+
+}
+.cards
+{
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+    width:50%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+.card-body
+{
+    background: blue;
+    margin:0px 20px;
+    color: white;
+    
+}
+.card-body
+{
+    width:50%;
+    height: 150px;
+    text-align: center;
+   
+}
+.card-subtitle 
+{
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+
+}
+.transaction-table
+{
+    width:50%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+#table-header th
+{
+ padding:15px 20px;
+ color: white;
+
+}
+
+#table-header
+{
+ background: blue;
+ 
+}
+.del
+{
+    background: none;
+    border: none;
+}
+/* Responsive styling for head-down section */
+@media (max-width: 768px) {
+  .head-down {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .form-select,
+  .amountInput,
+  .dateInput {
+    width: 100% !important;
+  }
+
+  .plus-btn {
+    align-self: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    width: 90%;
+    gap: 15px;
+  }
+
+  .card-body {
+    width: 100% !important;
+    margin: 0;
+    height: auto;
+    padding: 15px;
+  }
+
+  .transaction-table {
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  #table-header th {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+  .head-down {
+    width: 60%;
+  }
+
+  .cards {
+    width: 60%;
+  }
+
+  .transaction-table {
+    width: 60%;
+  }
+}
